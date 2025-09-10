@@ -1,1 +1,1 @@
-# dt_project
+# sql-100-days-challenge
