@@ -1,3 +1,5 @@
+-- Find all flight paths from NYC to Tokyo with max 2 stops, showing complete routes and layover airports.
+
 WITH recursive_flight
 AS (
 	SELECT flight_id, origin AS actual_origin,
