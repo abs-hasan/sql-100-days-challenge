@@ -1,1 +1,1 @@
-# sql-100-days-challenge
+# SQL — 100 Days Challenge
