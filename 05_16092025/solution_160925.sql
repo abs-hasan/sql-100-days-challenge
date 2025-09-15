@@ -1,4 +1,4 @@
--- Challenge:  Calculate revenue growth percentage using LAG function.
+-- Challenge:  Calculate month-over-month growth percentage using LAG function.
 
 SELECT 
     month_year,
@@ -17,9 +17,8 @@ SELECT
         WHEN LAG(revenue) OVER (ORDER BY month_year) IS NULL THEN 'First Month'
         WHEN revenue > LAG(revenue) OVER (ORDER BY month_year) THEN 'Growth'
         WHEN revenue < LAG(revenue) OVER (ORDER BY month_year) THEN 'Decline'
-        ELSE 'Flat ➡️'
+        ELSE 'Flat'
     END as trend_indicator
 
 FROM monthly_revenue 
 ORDER BY month_year;
-
