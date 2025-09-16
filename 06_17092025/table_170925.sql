@@ -1,5 +1,5 @@
 -- Drop table if it exists to ensure clean start
-DROP TABLE IF EXISTS monthly_revenue;
+DROP TABLE IF EXISTS user_actions;
 
 -- Create the user_actions table
 CREATE TABLE user_actions (
